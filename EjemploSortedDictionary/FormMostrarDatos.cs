@@ -31,7 +31,7 @@ namespace EjemploSortedDictionary
             cnx = new ConexionBD();
             miListaDesplegar = new ListaPersonas();
             miListaDesplegar = lp;
-            miDiccionarioDesplegar = dp;
+            miDiccionarioDesplegar = cnx.RetornarDicPersonas();
         }
 
         private void FormMostrarDatos_Load(object sender, EventArgs e)
